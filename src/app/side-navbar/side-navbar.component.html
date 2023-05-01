@@ -1,6 +1,10 @@
 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
     <div class="sb-sidenav-menu">
         <div class="nav">
+            <a class="nav-link" routerLink="/">
+                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+              Dashboard
+            </a>
             <div class="sb-sidenav-menu-heading">Management</div>
             <a class="nav-link" routerLink="/manufacture">
                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
@@ -28,12 +32,12 @@
                 Product
             </a>
 
-            <a class="nav-link" routerLink="/">
+            <a class="nav-link" routerLink="/category">
                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                 categories
             </a>
 
-            <a class="nav-link" routerLink="/category">
+            <a class="nav-link" routerLink="/subcategory">
                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                 Sub-categories
             </a>
@@ -46,6 +50,16 @@
             <a class="nav-link" routerLink="/user">
                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
              User
+            </a>
+
+            <a class="nav-link" routerLink="/department">
+                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+             Department
+            </a>
+
+            <a class="nav-link" routerLink="/weight">
+                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+             Weight
             </a>
            
             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
@@ -98,6 +112,6 @@
     </div>
     <div class="sb-sidenav-footer">
         <div class="small">Logged in as:</div>
-        Start Bootstrap
+        
     </div>
 </nav>

@@ -13,6 +13,8 @@ import { CategoryComponent } from './category/category/category.component';
 import { OrderComponent } from './orderr/order/order.component';
 import { SubCategoryComponent } from './sub-category/sub-category/sub-category.component';
 import { ProductCreateComponent } from './product/product-create/product-create.component';
+import { DepartmentComponent } from './Department/department/department.component';
+import { WeightComponent } from './Weight/weight/weight.component';
 
 const routes: Routes = [{path:'',component:HomeComponent,pathMatch:'full'},
 {path:'manufacture',component:ManufactureCreateComponent},
@@ -25,8 +27,11 @@ const routes: Routes = [{path:'',component:HomeComponent,pathMatch:'full'},
 { path: 'dailyManif', component: DailyManifComponent },
 { path: 'category', component: CategoryComponent },
 { path: 'order', component: OrderComponent },
-{ path: 'sub-category', component: SubCategoryComponent},
-{path:'product',component:ProductCreateComponent}
+{ path: 'subcategory', component: SubCategoryComponent},
+{path:'product',component:ProductCreateComponent},
+{path:'department',component:DepartmentComponent},
+{path:'weight',component:WeightComponent}
+
 ];
 
 @NgModule({
