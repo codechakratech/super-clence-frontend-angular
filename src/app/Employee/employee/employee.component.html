@@ -1,44 +1,60 @@
-<div class="container-fluid">
+<div class="container">
+    <h1 class="text-center fs-2 text-primary">Employee</h1>
+    <hr>
     <div class="row">
-        <div class="userForm">
-
-        </div>
-        <div class="header d-flex justify-content-center p-3">
-            <h1>Employee Form</h1>
-        </div>
+      
         <div class="col-md-12">
-            <form class="p-5">
-                <!-- Employee  -->
-                <!-- Name and Number -->
-                <div class="mb-3 d-flex justify-content-between">
-                    <div class="col-md-6 d-flex justify-content-around">
-                        <!-- <label for="userName" class="form-label">Name : </label> -->
+            <form>
+                <div class="row mb-3 d-flex align-items-center">
+                    <div class="col-md-4">
+                        <label >Name :</label>
                         <input type="text" class="form-control" id="empName" placeholder="Employee Name">
                     </div>
-                    <div class="col-md-5 d-flex justify-content-around">
-                        <!-- <label for="userNumber" class="form-label">Mobile No. : </label> -->
-                        <input type="number" class="form-control" id="empNumber" placeholder="Mobile No.">
+                    <div class="col-md-4">
+                        <label>Mobile No :</label>
+                        <input type="text" class="form-control" id="empNumber" placeholder="Mobile No.">
+                    </div>
+                    <div class="col-md-4">
+                        <label >Address : </label>
+                        <input type="text" class="form-control" id="empAddress" placeholder="Address">
                     </div>
                 </div>
-                <!-- Address -->
-                <div class="mb-3">
-                    <!-- <label for="userAddress" class="form-label">Address : </label> -->
-                    <input type="text" class="form-control" id="empAddress" placeholder="Address">
+
+                <div class="row mb-3 d-flex align-items-center">
+                    <div class="col-md-4">
+                        <label >Aadhar No :</label>
+                        <input type="text" placeholder="Enter Aadhar No:" class="form-control my-3">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="myfile">Select a Aadhar Photo :</label>
+                        <input type="file" placeholder=""  class="form-control my-3">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="myfile">Select a Profile Photo:</label>
+                        <input type="file"  class="form-control my-3">
+                    </div>
                 </div>
-                <!-- Email -->
-                <div class="mb-3">
-                    <!-- <label for="userEmail" class="form-label">Email : </label> -->
-                    <input type="email" class="form-control" id="empEmail" placeholder="Email Address"
+
+                <div class="row mb-3 d-flex align-items-center">
+                    <div class="col-md-4">
+                        <label>Email Id:</label>
+                        <input type="email" class="form-control" id="empEmail" placeholder="Email Address"
                         aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4"></div>
                 </div>
-                <div class="mb-3 text-center">
-                  <button class="btn-primary">add</button>
-                   
-                </div>
+                <!-- button -->
+       <div class="text-center">
+        <button class="btn btn-primary my-3 border-0" type="submit">Submit</button>
+        <button class="btn btn-dark my-3 mx-3 border-0" type="button">cancel</button>
+       </div>        
             </form>
-        </div>
+        </div>  
     </div>
+</div>
+
     <hr>
     <div class="row">
         <div class="col-md-1"></div>
@@ -52,6 +68,9 @@
                     <th>Email</th>
                     <th>Mobile No.</th>
                     <th>Address</th>
+                    <th>Aadhar No</th>
+                    <th>Aadhar Photo</th>
+                    <th>Profile Photo</th>
                 </thead>
                 <tbody>
                     <tr>
@@ -83,4 +102,3 @@
         </div>
         <div class="col-md-1"></div>
     </div>
-</div>
